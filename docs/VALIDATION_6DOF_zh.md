@@ -77,3 +77,7 @@ python six_dof/plot_results.py
 MATLAB 源码未执行，尚无 C/MATLAB 数值一致性运行证据；CMake 构建入口未执行。该模型也没有真实气动/发动机标定、风场、惯量随耗油变化或真实性能验证。
 
 最终独立代码审查发现一项参数校验问题：部分 C 参数的 NaN 会被 `fmin/fmax` 掩盖。已先用测试复现失败，再补齐全部浮点参数的有限性检查及配平输出检查；MATLAB 也增加初始化参数检查。修复后重新运行全部新旧检查及轨迹复现。审查未报告其他实质问题。
+
+## 6. 连接器交付核对
+
+通过已连接的 GitHub 连接器提交至 `voilalz/btt_guidance` 的 main 分支，功能提交为 [6ae66b4](https://github.com/voilalz/btt_guidance/commit/6ae66b4b5954578a5029ff69f4d8c415bbcf15fd)。增量包含 27 个新增/授权修改路径，总计 47 个交付文件。提交后读取远端树，逐一核对 blob SHA；所有文件与本地交付一致，20 个原受保护文件/规格保持。更新分支时使用 expected SHA，未强制覆盖。
