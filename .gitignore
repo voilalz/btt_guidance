@@ -1,0 +1,9 @@
+build/
+trajectory_demo
+trajectory_demo.exe
+check_core
+check_core.exe
+results_matlab/
+matlab/results_matlab/
+__pycache__/
+*.pyc

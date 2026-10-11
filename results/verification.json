@@ -1,0 +1,60 @@
+{
+  "runtime": "GCC/C99 (MATLAB/Octave unavailable)",
+  "cases": {
+    "constant": {
+      "rows": 6001,
+      "time_s": 119.99999999999326,
+      "end_position_m": [
+        2426.3042164430367,
+        166.75045723741746,
+        1400.1237562284127
+      ],
+      "end_speed_mps": 24.928157586821637,
+      "height_minmax_m": [
+        166.40508462011977,
+        200.27916109346106
+      ],
+      "speed_minmax_mps": [
+        24.300769052519776,
+        25.82821208813521
+      ],
+      "fuel_used_kg": 0.027600000002792058,
+      "independent_DOP853_position_error_max_m": 5.356923793442547e-10,
+      "dt_002_vs_001_position_error_max_m": 1.5165824152063578e-09,
+      "dt_01_vs_002_position_error_max_m": 1.4526733593811514e-08,
+      "dt_005_vs_002_position_error_max_m": 8.565166353946552e-10
+    },
+    "variable": {
+      "rows": 6001,
+      "time_s": 119.99999999999326,
+      "end_position_m": [
+        2427.2818675510716,
+        166.01571310999188,
+        1380.4218334655804
+      ],
+      "end_speed_mps": 25.733244278922196,
+      "height_minmax_m": [
+        166.01571310999188,
+        221.84599186155975
+      ],
+      "speed_minmax_mps": [
+        23.080621233700338,
+        26.340963124424366
+      ],
+      "fuel_used_kg": 0.02763673102118247,
+      "independent_DOP853_position_error_max_m": 9.154064173344523e-10,
+      "dt_002_vs_001_position_error_max_m": 1.0727490007411689e-09,
+      "dt_01_vs_002_position_error_max_m": 3.4442837204551324e-07,
+      "dt_005_vs_002_position_error_max_m": 2.238175511592999e-08
+    }
+  },
+  "checks": [
+    "two complete finite trajectories",
+    "monotone bounded mass",
+    "bounded thrust",
+    "equal mean thrust commands",
+    "step-size convergence",
+    "independent DOP853 agreement",
+    "six invalid command-line cases rejected"
+  ]
+}
