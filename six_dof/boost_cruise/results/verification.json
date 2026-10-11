@@ -1,0 +1,57 @@
+{
+  "dt_s": 0.005,
+  "comparison_dt_s": 0.0025,
+  "output_stride": 10,
+  "duration_s": 120,
+  "matlab_executed": false,
+  "cmake_executed": false,
+  "samples": 2402,
+  "common_grid_samples": 2401,
+  "initial_height_m": 0,
+  "initial_speed_mps": 0,
+  "initial_mass_kg": 12.5,
+  "boost_thrust_N": 260,
+  "burn_duration_s": 4,
+  "cruise_idle_thrust_N": 3,
+  "ignition_height_m": 40,
+  "ignition_speed_mps": 25,
+  "cruise_height_m": 40,
+  "cruise_speed_mps": 25,
+  "ignition": {
+    "t_s": 3.1144959879833527,
+    "height_m": 40.0,
+    "speed_mps": 46.41718128892672
+  },
+  "burnout": {
+    "t_s": 4.0,
+    "height_m": 66.68066172238711,
+    "speed_mps": 57.127690554470625,
+    "cruise_actual_thrust_N": 1.7624813616303558
+  },
+  "height_range_m": [
+    0.0,
+    96.32017147002557
+  ],
+  "speed_range_mps": [
+    0.0,
+    57.127690554470625
+  ],
+  "final_position_m": [
+    3244.3548893768584,
+    40.007582243623986,
+    0.0
+  ],
+  "final_speed_mps": 24.996476643492645,
+  "final_mass_kg": 11.97480151426805,
+  "final_boost_fuel_kg": 0.0,
+  "final_cruise_fuel_kg": 0.2748015142680497,
+  "post_60s_max_height_error_m": 0.0075822436239860735,
+  "post_60s_max_speed_error_mps": 0.0035233565073546913,
+  "max_quaternion_norm_error": 1.1102230246251565e-16,
+  "convergence": {
+    "position_m": 1.269879926874492e-05,
+    "velocity_mps": 1.2851858386672346e-05,
+    "attitude_deg": 3.383483439555417e-06
+  },
+  "termination": "duration"
+}

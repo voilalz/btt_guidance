@@ -55,3 +55,7 @@ python tests/run_checks.py
 恒定模式表示恒定油门指令；持续可变模式有发动机响应滞后。两案例使用同一初始全配平状态和小舵面输入。六自由度中的迎角、侧滑角及姿态由状态演化，与原三自由度的预设角度模型不同，不能通过曲线重合来判断哪个更准确。虚构参数结果只用于验证本教学方程和程序流程。
 
 ![六自由度轨迹及动力](results/overview.png)
+
+## 新增情形：固体助推起飞与巡航接管
+
+[boost_cruise/README_zh.md](boost_cruise/README_zh.md) 提供独立运行入口：静止离地、预设固体助推、高度与速度 AND 门限点火、一阶巡航推力及高度/速度稳定。复用本目录 C 刚体方程，增加两类燃料库存与阶段事件；本页两组原案例不变。完整模型与实测验证分别见 [MODEL_BOOST_CRUISE_zh.md](../docs/MODEL_BOOST_CRUISE_zh.md) 和 [VALIDATION_BOOST_CRUISE_zh.md](../docs/VALIDATION_BOOST_CRUISE_zh.md)。

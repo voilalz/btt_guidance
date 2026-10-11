@@ -138,3 +138,11 @@ python tests/verify_outputs.py ./trajectory_demo
 请从 [六自由度运行说明](six_dof/README_zh.md) 进入，模型见 [MODEL_6DOF_zh.md](docs/MODEL_6DOF_zh.md)，实际验证见 [VALIDATION_6DOF_zh.md](docs/VALIDATION_6DOF_zh.md)。默认采用全力/力矩初始配平、15 维状态、0.01 s RK4 步长和 120 s 时长，两种模式每组 2401 个样本。CSV 角度单位为 rad，图中角度为 deg。
 
 注意：原三自由度和新增六自由度 MATLAB 文件夹各有一个 `plot_saved_csv.m`。使用某个模型时只将对应文件夹加入 MATLAB 路径；切换模型先 `rmpath` 另一个目录，再 `clear plot_saved_csv`。
+
+## H. 固体助推起飞后接管持续巡航
+
+新增 [助推与巡航运行说明](six_dof/boost_cruise/README_zh.md)、[数学模型](docs/MODEL_BOOST_CRUISE_zh.md) 和 [实际验证](docs/VALIDATION_BOOST_CRUISE_zh.md)。本情形从地面静止释放，使用预设固体助推；高度 **40 m** 且速度 **25 m/s** 同时达到后点火巡航动力。助推仍在 **4 s** 自然燃尽，允许两种动力短时重叠，之后简易稳定器维持巡航。
+
+已实际运行 C 的 120 s 案例：巡航点火 **3.114496 s**，末高度 **40.0076 m**、末速度 **24.9965 m/s**。助推造成最高约 **96.32 m** 的高度超调，再逐渐回到巡航目标。全部参数为虚构教学值；MATLAB 独立源码已提供，当前环境未执行。原三自由度与原六自由度案例保留。
+
+![固体助推到巡航轨迹](six_dof/boost_cruise/results/trajectory.png)

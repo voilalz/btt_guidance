@@ -28,3 +28,13 @@ add_executable(check_six_dof_events six_dof/tests/check_events.c)
 target_link_libraries(check_six_dof_events PRIVATE six_dof_core)
 add_test(NAME six_dof_analytic_physics COMMAND check_six_dof_core)
 add_test(NAME six_dof_events COMMAND check_six_dof_events)
+
+# Solid booster and conditional cruise ignition using the unchanged six-DOF RHS.
+add_library(boost_cruise_core six_dof/boost_cruise/c/boost_cruise.c)
+target_include_directories(boost_cruise_core PUBLIC six_dof/boost_cruise/c)
+target_link_libraries(boost_cruise_core PUBLIC six_dof_core)
+add_executable(boost_cruise_demo six_dof/boost_cruise/c/main.c)
+target_link_libraries(boost_cruise_demo PRIVATE boost_cruise_core)
+add_executable(check_boost_cruise_model six_dof/boost_cruise/tests/check_model.c)
+target_link_libraries(check_boost_cruise_model PRIVATE boost_cruise_core)
+add_test(NAME boost_cruise_model_events COMMAND check_boost_cruise_model)
