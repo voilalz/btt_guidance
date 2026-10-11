@@ -1,4 +1,4 @@
-# 连续可变推力轨迹仿真 v0.1
+# 连续可变推力轨迹仿真：三自由度与六自由度
 
 这是一个无需真实气动数据的小型试验飞行器教学工程。C版已实际编译并运行；MATLAB版按相同方程编写，无专用工具箱依赖，但本次环境没有MATLAB/Octave，未做MATLAB运行验证。
 
@@ -129,4 +129,12 @@ Windows请生成 `check_core.exe` 并用 `.\check_core.exe` 运行。
 python tests/verify_outputs.py ./trajectory_demo
 ```
 
-本版没有六自由度姿态积分、控制器、真实发动机标定、风场、地球曲率或真实性能验证。
+上述 v0.1 三自由度子模块没有姿态积分；新增六自由度子模块见下文。两个教学模型均使用虚构参数。
+
+## G. 新增六自由度仿真
+
+原 `c/`、`matlab/`、`tests/`、`results/` 及三自由度模型文档全部保留。新的 `six_dof/` 包含 C 和 MATLAB 独立实现、解析测试、CSV 与四组曲线。
+
+请从 [六自由度运行说明](six_dof/README_zh.md) 进入，模型见 [MODEL_6DOF_zh.md](docs/MODEL_6DOF_zh.md)，实际验证见 [VALIDATION_6DOF_zh.md](docs/VALIDATION_6DOF_zh.md)。默认采用全力/力矩初始配平、15 维状态、0.01 s RK4 步长和 120 s 时长，两种模式每组 2401 个样本。CSV 角度单位为 rad，图中角度为 deg。
+
+注意：原三自由度和新增六自由度 MATLAB 文件夹各有一个 `plot_saved_csv.m`。使用某个模型时只将对应文件夹加入 MATLAB 路径；切换模型先 `rmpath` 另一个目录，再 `clear plot_saved_csv`。

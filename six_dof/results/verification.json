@@ -1,0 +1,90 @@
+{
+  "implementation": "C99, GCC strict warnings",
+  "duration_requested_s": 120,
+  "dt_s": 0.01,
+  "output_stride": 5,
+  "comparison_dt_s": 0.005,
+  "matlab_executed": false,
+  "cmake_executed": false,
+  "parameters": {
+    "mass0_kg": 12,
+    "mass_dry_kg": 11.7,
+    "speed0_mps": 25,
+    "height0_m": 200,
+    "area_m2": 0.8,
+    "span_m": 2,
+    "chord_m": 0.4,
+    "inertia_kgm2": [
+      1,
+      1.6,
+      2.2
+    ],
+    "g_mps2": 9.80665,
+    "rho0_kgm3": 1.225,
+    "scale_height_m": 8500,
+    "thrust_max_N": 60,
+    "thrust_tau_s": 1,
+    "fuel_c0_kgps": 5e-05,
+    "fuel_cT_kg_per_Ns": 1.5e-05
+  },
+  "cases": {
+    "constant": {
+      "samples": 2401,
+      "end_time_s": 120.0,
+      "termination": "duration",
+      "final_position_m": [
+        2997.5215632457216,
+        200.48964312555017,
+        -52.29115249750532
+      ],
+      "height_range_m": [
+        200.0,
+        200.48964312555017
+      ],
+      "speed_range_mps": [
+        24.969825163373358,
+        24.999999999999996
+      ],
+      "final_mass_kg": 11.970181078928988,
+      "max_quaternion_norm_error": 2.220446049250313e-16,
+      "convergence": {
+        "max_position_difference_m": 1.358497960712299e-09,
+        "max_velocity_difference_mps": 2.2485921768331916e-11,
+        "max_attitude_difference_deg": 9.879395482576556e-10,
+        "common_samples": 2401
+      }
+    },
+    "variable": {
+      "samples": 2401,
+      "end_time_s": 120.0,
+      "termination": "duration",
+      "final_position_m": [
+        2985.6797525796937,
+        197.99585904380496,
+        -15.66525133116373
+      ],
+      "height_range_m": [
+        197.99585904380496,
+        231.61558426866804
+      ],
+      "speed_range_mps": [
+        22.869399490076137,
+        26.695130037347006
+      ],
+      "final_mass_kg": 11.970144347904414,
+      "max_quaternion_norm_error": 2.220446049250313e-16,
+      "convergence": {
+        "max_position_difference_m": 2.4495155769882306e-09,
+        "max_velocity_difference_mps": 8.333310781817357e-11,
+        "max_attitude_difference_deg": 1.0778667805839916e-09,
+        "common_samples": 2401
+      }
+    }
+  },
+  "initial_trim": {
+    "alpha_rad": 0.042561544595518655,
+    "elevator_rad": -0.004049235676414929,
+    "throttle": 0.22054556550345328,
+    "thrust_N": 13.232733930207196
+  }
+}

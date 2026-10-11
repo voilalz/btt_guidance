@@ -1,0 +1,22 @@
+{
+  ".gitignore": "43bc17bce453805ba8ce3fd4f50fbb64e75f9d20",
+  "c/main.c": "e0c3e36dd3fb4bcd2dd8ce00b6a9090859792268",
+  "c/trajectory.c": "a2f40906615424975092b0a3ccfd7d1f2982de53",
+  "c/trajectory.h": "ebea16c9d4a76b1b298885f404518e302bb877d3",
+  "docs/DESIGN_zh.md": "e71f65ffeb06f43912cecdf45c9e61347d00144f",
+  "docs/MODEL_zh.md": "292a27fa72311227745e2aa2cefb98fb3237e176",
+  "docs/VALIDATION_zh.md": "9d194a6444938f7ce8f7762026bd599686bb9015",
+  "matlab/plot_saved_csv.m": "bfb9d2567a6d145b699da5fe4f68a39b81ff9dd4",
+  "matlab/run_variable_thrust_demo.m": "a8990926582a2b8e7e7caa6020f5e79b947ec512",
+  "plot_results.py": "7867125c589ad3e0071990597e232064b21bfa6d",
+  "results/constant.csv": "20ad6c8782866288d7022d203b24f1d194b03e4b",
+  "results/overview.png": "3e145d0184404e202f9a038f6f31e5c9135a12fb",
+  "results/trajectory_3d.png": "2a57bb90ae5f30a330d5ef6fa4075c40a9ffde4e",
+  "results/variable.csv": "ccfc66aa27eab127dee8af3e51935d6f461b0783",
+  "results/verification.json": "b7dd1eecedc4baaafbcf065a39501757ccc97c43",
+  "tests/check_cli_timing.py": "89966e0a4b9605c84ffd2c19673fbe70e3b27e82",
+  "tests/check_core.c": "688ce8d79175a0769511dd678bf92ca2262e0efd",
+  "tests/run_checks.py": "40ab529ff782901e69e73404db0204b2aa5b46b5",
+  "tests/verify_outputs.py": "8478c5672b6785111bddf792b85de87f92733462",
+  "docs/superpowers/specs/2026-10-11-six-dof-design.md": "76696cd323be32b7cc116ef12303585447b30b0d"
+}
