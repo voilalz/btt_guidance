@@ -38,3 +38,13 @@ target_link_libraries(boost_cruise_demo PRIVATE boost_cruise_core)
 add_executable(check_boost_cruise_model six_dof/boost_cruise/tests/check_model.c)
 target_link_libraries(check_boost_cruise_model PRIVATE boost_cruise_core)
 add_test(NAME boost_cruise_model_events COMMAND check_boost_cruise_model)
+
+# Civil fixed-route controllers and independent traffic safety supervision.
+add_library(civil_route_core six_dof/civil_route/c/controllers.c six_dof/civil_route/c/civil_route.c)
+target_include_directories(civil_route_core PUBLIC six_dof/civil_route/c)
+target_link_libraries(civil_route_core PUBLIC boost_cruise_core)
+add_executable(civil_route_demo six_dof/civil_route/c/main.c)
+target_link_libraries(civil_route_demo PRIVATE civil_route_core)
+add_executable(check_civil_route_components six_dof/civil_route/tests/check_components.c)
+target_link_libraries(check_civil_route_components PRIVATE civil_route_core)
+add_test(NAME civil_route_controllers_traffic COMMAND check_civil_route_components)

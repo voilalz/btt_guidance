@@ -1,0 +1,21 @@
+{
+  "scene": "monitor",
+  "end_time_s": 120,
+  "termination": "duration",
+  "dt_s": 0.0050000000000000001,
+  "output_stride": 10,
+  "controllers": ["launch", "direct", "slew"],
+  "controller_calls": [1601, 14027, 8374],
+  "accepted_steps": 24001,
+  "samples": 2406,
+  "minimum_separation_m": 21.522424501686086,
+  "minimum_separation_time_s": 50.310000000000002,
+  "max_quaternion_norm_error": 1.1102230246251565e-16,
+  "safety_activations": 0,
+  "route_complete": 1,
+  "traffic_height_m": 40,
+  "ignition_time_s": 3.1144959879833527,
+  "final_position_m": [3078.349193032132, 30.000049152077565, 0],
+  "final_speed_mps": 20.000007391502368,
+  "final_mass_kg": 11.977662800146037
+}

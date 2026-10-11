@@ -146,3 +146,11 @@ python tests/verify_outputs.py ./trajectory_demo
 已实际运行 C 的 120 s 案例：巡航点火 **3.114496 s**，末高度 **40.0076 m**、末速度 **24.9965 m/s**。助推造成最高约 **96.32 m** 的高度超调，再逐渐回到巡航目标。全部参数为虚构教学值；MATLAB 独立源码已提供，当前环境未执行。原三自由度与原六自由度案例保留。
 
 ![固体助推到巡航轨迹](six_dof/boost_cruise/results/trajectory.png)
+
+## I. 民用航路跟踪与独立交通避碰
+
+[运行与控制器接口说明](six_dof/civil_route/README_zh.md) 提供新情形：保留固体助推—巡航动力切换，跟踪固定低空航路，出发、航路、进近三个阶段可分别选择或传入控制器回调。交通信息由独立安全监督器处理。
+
+实际 C 仿真包括 10 km 恒高交通、低空交叉避碰及仅监测对照；交叉情形最小三维间距分别为 **126.44 m**（开启监督）与 **21.52 m**（仅监测）。本机仍使用现有虚构小型飞行器参数和低空航路。完整模型见 [MODEL_CIVIL_ROUTE_zh.md](docs/MODEL_CIVIL_ROUTE_zh.md)，校核见 [VALIDATION_CIVIL_ROUTE_zh.md](docs/VALIDATION_CIVIL_ROUTE_zh.md)。C 已实际运行；新 MATLAB 入口调用 C 并绘制 CSV，当前未执行 MATLAB。
+
+![交叉交通避碰对照](six_dof/civil_route/results/crossing_avoidance.png)

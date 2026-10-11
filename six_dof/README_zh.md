@@ -59,3 +59,5 @@ python tests/run_checks.py
 ## 新增情形：固体助推起飞与巡航接管
 
 [boost_cruise/README_zh.md](boost_cruise/README_zh.md) 提供独立运行入口：静止离地、预设固体助推、高度与速度 AND 门限点火、一阶巡航推力及高度/速度稳定。复用本目录 C 刚体方程，增加两类燃料库存与阶段事件；本页两组原案例不变。完整模型与实测验证分别见 [MODEL_BOOST_CRUISE_zh.md](../docs/MODEL_BOOST_CRUISE_zh.md) 和 [VALIDATION_BOOST_CRUISE_zh.md](../docs/VALIDATION_BOOST_CRUISE_zh.md)。
+
+[civil_route/README_zh.md](civil_route/README_zh.md) 进一步新增固定民用航路与独立交通：三个阶段分别配置参考生成器，安全监督负责交通风险和高度参考覆盖，输出双机轨迹及实际安全间距。C 复用已有助推六自由度积分；MATLAB 提供调用 C 与 CSV 绘图入口。

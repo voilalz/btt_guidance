@@ -1,0 +1,116 @@
+{
+  "scenes": {
+    "high": {
+      "scene": "high",
+      "end_time_s": 120,
+      "termination": "duration",
+      "dt_s": 0.005,
+      "output_stride": 10,
+      "controllers": [
+        "launch",
+        "direct",
+        "slew"
+      ],
+      "controller_calls": [
+        1601,
+        14027,
+        8374
+      ],
+      "accepted_steps": 24001,
+      "samples": 2406,
+      "minimum_separation_m": 9960.012909841882,
+      "minimum_separation_time_s": 76.705,
+      "max_quaternion_norm_error": 1.1102230246251565e-16,
+      "safety_activations": 0,
+      "route_complete": 1,
+      "traffic_height_m": 10000,
+      "ignition_time_s": 3.1144959879833527,
+      "final_position_m": [
+        3078.349193032132,
+        30.000049152077565,
+        0
+      ],
+      "final_speed_mps": 20.00000739150237,
+      "final_mass_kg": 11.977662800146037,
+      "half_step_position_m": 0.006330913657133484,
+      "half_step_velocity_mps": 0.0006279330033632902
+    },
+    "crossing": {
+      "scene": "crossing",
+      "end_time_s": 120,
+      "termination": "duration",
+      "dt_s": 0.005,
+      "output_stride": 10,
+      "controllers": [
+        "launch",
+        "direct",
+        "slew"
+      ],
+      "controller_calls": [
+        1601,
+        14159,
+        8242
+      ],
+      "accepted_steps": 24001,
+      "samples": 2408,
+      "minimum_separation_m": 126.44339631296148,
+      "minimum_separation_time_s": 51.555,
+      "max_quaternion_norm_error": 1.1102230246251565e-16,
+      "safety_activations": 1,
+      "route_complete": 1,
+      "traffic_height_m": 40,
+      "ignition_time_s": 3.1144959879833527,
+      "final_position_m": [
+        3242.1395214276145,
+        30.00214664537767,
+        0
+      ],
+      "final_speed_mps": 19.963611588315825,
+      "final_mass_kg": 11.976059816458527,
+      "half_step_position_m": 0.013642950519527398,
+      "half_step_velocity_mps": 0.0017630031824044851
+    },
+    "monitor": {
+      "scene": "monitor",
+      "end_time_s": 120,
+      "termination": "duration",
+      "dt_s": 0.005,
+      "output_stride": 10,
+      "controllers": [
+        "launch",
+        "direct",
+        "slew"
+      ],
+      "controller_calls": [
+        1601,
+        14027,
+        8374
+      ],
+      "accepted_steps": 24001,
+      "samples": 2406,
+      "minimum_separation_m": 21.522424501686086,
+      "minimum_separation_time_s": 50.31,
+      "max_quaternion_norm_error": 1.1102230246251565e-16,
+      "safety_activations": 0,
+      "route_complete": 1,
+      "traffic_height_m": 40,
+      "ignition_time_s": 3.1144959879833527,
+      "final_position_m": [
+        3078.349193032132,
+        30.000049152077565,
+        0
+      ],
+      "final_speed_mps": 20.00000739150237,
+      "final_mass_kg": 11.977662800146037,
+      "half_step_position_m": 0.006330913657133484,
+      "half_step_velocity_mps": 0.0006279330033632902
+    }
+  },
+  "alternate_controllers": [
+    "direct",
+    "slew",
+    "direct"
+  ],
+  "matlab_executed": false,
+  "cmake_executed": false
+}

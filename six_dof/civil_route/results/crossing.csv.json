@@ -1,0 +1,21 @@
+{
+  "scene": "crossing",
+  "end_time_s": 120,
+  "termination": "duration",
+  "dt_s": 0.0050000000000000001,
+  "output_stride": 10,
+  "controllers": ["launch", "direct", "slew"],
+  "controller_calls": [1601, 14159, 8242],
+  "accepted_steps": 24001,
+  "samples": 2408,
+  "minimum_separation_m": 126.44339631296148,
+  "minimum_separation_time_s": 51.555,
+  "max_quaternion_norm_error": 1.1102230246251565e-16,
+  "safety_activations": 1,
+  "route_complete": 1,
+  "traffic_height_m": 40,
+  "ignition_time_s": 3.1144959879833527,
+  "final_position_m": [3242.1395214276145, 30.002146645377671, 0],
+  "final_speed_mps": 19.963611588315825,
+  "final_mass_kg": 11.976059816458527
+}
